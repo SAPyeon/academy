@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<input type='checkbox' name='animal' id="all" value='selectall' onclick='selectAll(this)' />
+	<b>Select All</b>
+	<br />
+	<input type='checkbox' name='animal' class="animal" value='dog' /> 개
+	<br />
+	<input type='checkbox' name='animal' class="animal" value='cat' /> 고양이
+	<br />
+	<input type='checkbox' name='animal' class="animal" value='rabbit' />
+	토끼
+	<div id="result"></div>
+	<script>
+		function selectAll(selectAll) {
+			const checkboxes
+				= document.querySelectorAll('input[name="animal"]');
+
+			checkboxes.forEach((checkbox) => {
+				checkbox.checked = selectAll.checked
+			})
+		}
+		const animal = document.querySelectorAll(".animal");
+
+		const allCheck = document.querySelector("#all");
+
+		animal.forEach((z) => {
+			z.onchange = () => {
+				if (z.checked === false) {
+					allCheck.checked = false;
+				}
+			}
+		})
+		animal.forEach((e) => {
+			e.addEventListener('change', getCheckedCnt);
+		})
+		function getCheckedCnt() {
+			// 선택된 목록 가져오기
+			const query = 'input[name="animal"]:checked';
+			const selectedElements =
+				document.querySelectorAll(query);
+
+			// 선택된 목록의 갯수 세기
+			const selectedElementsCnt =
+				selectedElements.length;
+
+			// 출력
+			document.getElementById('result').innerText
+				= selectedElementsCnt;
+			console.log(selectedElementsCnt)
+		}
+	</script>
+</body>
+
+</html>

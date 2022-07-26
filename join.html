@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+	<div id="header">
+		<h1>join</h1>
+	</div>
+	<div id="main">
+		<form>
+			<div id="container">
+
+				<div class="id">
+					<h3>아이디</h3>
+					<input type="text" id="id" class="textbox">
+				</div>
+				<div class="password">
+					<h3>비밀번호</h3>
+					<input type="text" id="pw" class="textbox">
+				</div>
+				<div class="password2">
+					<h3>비밀번호 재확인</h3>
+					<input type="text" id="pw2" class="textbox">
+				</div>
+				<div class="name">
+					<h3>이름</h3>
+					<input type="text" id="name" class="textbox">
+				</div>
+				<div class="birth">
+					<h3>생년월일</h3>
+					<input type="text" id="year" placeholder="년(4자)"> <select
+						name="month" id="month">
+						<option value="no">월</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select> <input type="text" id="day" placeholder="일">
+				</div>
+				<div class="gender">
+					<h3>성별</h3>
+					<select name="gender" id="gender">
+						<option value="no">성별</option>
+						<option value="man">남</option>
+						<option value="woman">여</option>
+					</select>
+				</div>
+				<div>
+					<h3>본인 확인 이메일(선택)</h3>
+					<input type="text" id=email placeholder="선택입력" class="textbox">
+				</div>
+				<div>
+					<h3>휴대전화</h3>
+					<input type="text" id=tel placeholder="전화번호입력" >
+					<button>인증번호 받기</button>
+					<div class="disable tel">
+						<input type="text" id=tel2 placeholder="인증번호 입력하세요" disabled>
+					</div>
+				</div>
+				<button type="submit">가입하기</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

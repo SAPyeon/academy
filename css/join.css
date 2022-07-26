@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#container {
+	margin: 0 auto;
+	width: 30%
+}
+
+.textbox {
+	width: 274px;
+	height: 40px;
+}
+#year, #day{
+	width: 84px;
+    height: 40px;
+}
+#month{
+	width: 84px;
+    height: 46px;
+}
+#gender{
+	width: 283px;
+	height: 46px;
+}

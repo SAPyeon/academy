@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#main {
+	width: 1024px;
+	margin:0 auto;
+}
+hr{
+	width:970px;
+	margin-top:-10px;
+}
+#label_join{
+	float:right;
+	margin-right: 31px;
+}
+#join_h3{
+	clear:both;
+	margin-left:36px;
+}
+#table_join {
+	width: 100%;
+    border: 2px solid #dae1e6;
+	border-collapse: collapse;
+}
+#table_join tr {
+	text-align: left;
+	margin: 0;
+	border: 1px solid #dae1e6;
+	
+}
+#table_join td{
+	border:none;
+}
+#section{
+	margin: 0 auto;
+	width:800px;
+}
+#join {	
+	margin-left: 0;
+	width: 100%;
+}
+
+#table_join {
+	margin-bottom: 10px;
+}
+
+.create {
+	width: 257px;
+	height: 30px;
+	border:none;
+}
+
+#email_prv, #email_pub{
+	width: 157px;
+	height: 30px;
+	border:none;
+	font-size: inherit;
+}
+#select_email{
+	height:33px;
+}
+#select{
+	height:35px;
+}
+.birth {
+	margin: 0 6px;
+    font-size: inherit;
+    height: 29px;
+    width: 10%;
+}
+
+.gender {
+	margin-right: 12px;
+}
+
+#agreement-container {
+	border: 2px solid #dae1e6;
+	border-collapse: collapse;
+	width:100%
+}
+#agreement-container tr,td{
+	border: 1px solid #dae1e6;
+}
+
+#text_marketing {
+	margin: 10px 0;
+}
+
+.check-group {
+	margin: 10px 0;
+}
+
+#check-group {
+	border: 1px solid #dae1e6;
+}
+
+#button_agree{
+	padding:15px 9px;
+	color:white;
+	background-color:#3d06f9;
+	border: 0.2px solid #dae1e6;
+	font-size: 15px;
+	font-weight: bold;
+}
+.error{
+	width:100px;
+}
+.td_name{
+	width:100px;
+}
+#btn_join{
+	margin: 18px auto;
+    width: 165px;
+}
+.btn_check{
+	
+}

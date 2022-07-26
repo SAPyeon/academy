@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="css/create_id.css">
+	<script type="text/javascript" src="js/create_id.js"></script>
+</head>
+
+<body>
+	<div id="header">1</div>
+	<div id="main">
+		<div id="label_join">Home>회원정보입력</div>
+		<h3 id="join_h3">회원정보입력</h3>
+		<hr>
+		<div id="section">
+			<form id="join">
+				<table id="table_join">
+					<tr>
+						<td class="td_name">이름</td>
+						<td><input type="text" id="create_name" class="create"></td>
+					</tr>
+					<tr>
+						<td class="td_name">아이디</td>
+						<td><input type="text" id="create_id" class="create">
+							<span class="error" id="idMsg"></span>
+						</td>
+
+					</tr>
+					<tr>
+						<td class="td_name">비밀번호</td>
+						<td><input type="password" id="create_password" class="create"> <span class="error"
+								id="pswMsg"></span></td>
+					</tr>
+					<tr>
+						<td class="td_name">비밀번호확인</td>
+						<td><input type="password" id="correct_password" class="create"> <span class="error"
+								id="psw2Msg"></span></td>
+					</tr>
+					<tr>
+						<td class="td_name">이메일</td>
+						<td><input type="email" id="email_prv"> <label>@</label>
+							<input type="text" id="email_pub"> <select id="select_email" name="email">
+								<option value="no" selected>선택안함</option>
+								<option value="naver.com">naver.com</option>
+								<option value="daum.com">daum.com</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" class="birth" placeholder="생년"> <select name="birth_month"
+								class="birth" id="select">
+								<option value="no">월</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select> <input type="text" class="birth" placeholder="일"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="radio" name="gender" value="gender" id="nogender" checked> <label
+								for="nogender" class="gender">선택안함</label> <input type="radio" name="gender"
+								value="gender" id="men"><label for="men" class="gender">남</label> <input type="radio"
+								name="gender" value="gender" id="women"> <label for="women" class="gender">여</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="td_name">휴대폰번호</td>
+						<td><input type="tel" id="correct_tel" class="create">
+							<button id="btn_tel" class="btn_check">인증</button>
+						</td>
+
+
+					</tr>
+					<tr>
+						<td class="td_name">SNS인증번호</td>
+						<td><input type="text" id="correct_number" class="create">
+							<button id="btn_sns" class="btn_check">확인</button>
+						</td>
+
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<div id="14ormore">
+								<span>14세 이상입니다.(필수)</span>
+								<div>*회원가입에 필요한 최소한의 정보만 입력 함으로써 고객님의 가입정보 수집을 최소화하고 편리한
+									회원가입을 제공합니다.</div>
+							</div>
+
+						</td>
+					</tr>
+
+
+				</table>
+
+				<table id="agreement-container">
+					<tr>
+						<td>
+							<div class="agreement-allcheck">
+								<input type="checkbox" id="allcheck">
+								<label for="allcheck">전체동의</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="check-group">
+								<input type="checkbox" id="check_01" class="agreement" name="check">
+								<label for="check_01">이용약관</label>
+								<input type="button" value="내용보기" class="read_agreement">
+							</div>
+							<div class="check-group">
+								<input type="checkbox" id="check_02" class="agreement" name="check">
+								<label for="check_02">개인정보 수집 및 이용안내</label>
+								<input type="button" value="내용보기" class="read_agreement">
+							</div>
+							<div class="check-group">
+								<input type="checkbox" id="check_03" class="agreement" name="check">
+								<label for="check_03">개인정보 제3자 제공</label>
+								<input type="button" value="내용보기" class="read_agreement">
+							</div>
+							<div class="check-group">
+								<input type="checkbox" id="check_04" class="agreement" name="check">
+								<label for="check_04">개인정보 처리위탁</label>
+								<input type="button" value="내용보기" class="read_agreement">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+
+							<div id="agree_marketing">
+								<div class="check-group">
+									<input type="checkbox" id="check_05" class="agreement" name="check">
+									<label for="check_04">마케팅 수신동의</label> (
+									<input type="checkbox" id="check_06" class="marketchk" name="check2">
+									<label for="check_06">이메일</label>
+									<input type="checkbox" id="check_07" class="marketchk" name="check2">
+									<label for="check_06">SMS</label>
+									<input type="checkbox" id="check_08" class="marketchk" name="check2">
+									<label for="check_06">앱(Push알림)</label>
+									)
+								</div>
+							</div>
+							<div id="text_marketing">
+								쇼핑몰에서 제공하는 신상품 소식/할인쿠폰을 무상으로 보내드립니다.<br> 단, 상품 구매 정보는 수신동의
+								여부 관계없이 발송됩니다.<br> 제관 동의를 하지 않으셔도 서비스 이용에는 문제가 없습니다.
+							</div>
+						</td>
+					</tr>
+
+				</table>
+
+				<div id="btn_join">
+					<button id="button_agree">동의하고 가입완료</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div id="footer">3</div>
+</body>
+
+</html>
