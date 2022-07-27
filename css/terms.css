@@ -1,0 +1,70 @@
+#main{
+	background-color: yellow;
+	width:1024px;
+	height:950px;
+}
+table {
+	border-collapse: collapse;
+	width:900px;
+	height:50%;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-align:center;
+	font-size:16px;
+	padding:10px;
+}
+tr:first-child{
+	font-weight: bold;
+}
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding:10px 15px;
+}
+td:first-child{
+	font-weight: bold;
+}
+p{
+	font-size:20px;
+	font-weight: bold;
+	margin-bottom:-1px;
+}
+
+#termsofuse {
+	background-color: aqua;
+	width: 1024px;
+	height: 220px;
+}
+
+#text_terms {
+	width: 900px;
+	height: 190px;
+}
+
+
+#use_private {
+	background-color: beige;
+	width: 1024px;
+	height: 140px;
+	margin:10px 0;
+}
+
+#give_private {
+	background-color: #00ff80;
+	width: 1024px;
+	height: 150px;
+	margin: 30px 0;
+}
+
+#commission_private {
+	background-color: #ff8040;
+	width: 1024px;
+	height: 150px;
+	margin: 30px 0;
+}
+
+#text_private {
+	background-color: #ff80ff;
+	width: 1000px;
+	height: 100px;
+	margin: 50px 0;
+}
