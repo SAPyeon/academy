@@ -98,7 +98,7 @@ window.onload = function () {
 			value.checked = true;
 		}
 		m_allcheck.addEventListener('change', () => {
-			if (marketcheckall.checked === true) {
+			if (m_allcheck.checked === true) {
 				value.checked = true;
 			} else {
 				value.checked = false;
